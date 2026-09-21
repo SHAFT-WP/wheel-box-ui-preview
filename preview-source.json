@@ -1,0 +1,27 @@
+{
+  "sourceCommit": "f0bba8a598bc1692f35e4d6f6d4ec68c92814418",
+  "tool": "wheel-box",
+  "files": [
+    "AG/bombing/bomb-delivery-planner/ballistics-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/bomb-delivery-planner-v0.2.mjs",
+    "AG/bombing/bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs",
+    "AG/bombing/bomb-delivery-planner/delivery-geometry-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/roll-in-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/safety-legacy-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/safety-sem-v0.2.mjs",
+    "AG/bombing/bomb-delivery-planner/visualization-state-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/weapon-data-v0.1.mjs",
+    "AG/bombing/wheel-attack/wheel-be-v0.5.mjs",
+    "AG/bombing/wheel-attack/wheel-box-be-v0.4.mjs",
+    "AG/bombing/wheel-attack/wheel-box-be-v0.5.mjs",
+    "AG/bombing/wheel-attack/wheel-box-geometry-v0.3.mjs",
+    "AG/bombing/wheel-attack/wheel-box-geometry-v0.4.mjs",
+    "AG/bombing/wheel-attack/wheel-orbit-turn-v0.3.mjs",
+    "common/airspeed/airspeed-v0.1.mjs",
+    "common/atmosphere/standard-atmosphere-v0.1.mjs",
+    "common/maneuvers/g-onset/g-onset-v0.1.mjs",
+    "common/maneuvers/recovery-pull/recovery-pull-v0.1.mjs",
+    "common/maneuvers/turn-performance/radius-driven-level-turn-v0.1.mjs",
+    "common/maneuvers/turn-performance/turn-performance-v0.1.mjs"
+  ]
+}
