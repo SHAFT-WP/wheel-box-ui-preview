@@ -1,10 +1,11 @@
 {
-  "sourceCommit": "cbc9d06a5332803c516d2cd4e3c8c478719db921",
+  "sourceCommit": "c0d0f7f896cabe85ef2cdb2f9914f2de9d2fb52a",
   "tool": "wheel-box",
   "files": [
     "AG/bombing/bomb-delivery-planner/ballistics-v0.1.mjs",
     "AG/bombing/bomb-delivery-planner/bomb-delivery-planner-v0.2.mjs",
     "AG/bombing/bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs",
+    "common/ui/display-precision-v0.1.mjs",
     "AG/bombing/bomb-delivery-planner/delivery-geometry-v0.1.mjs",
     "AG/bombing/bomb-delivery-planner/roll-in-v0.1.mjs",
     "AG/bombing/bomb-delivery-planner/safety-legacy-v0.1.mjs",

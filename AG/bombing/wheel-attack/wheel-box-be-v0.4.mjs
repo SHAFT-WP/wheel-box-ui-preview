@@ -1,5 +1,5 @@
 import { casToTas } from "../../../common/airspeed/airspeed-v0.1.mjs";
-import { calculateBombDeliveryV0_3 } from "../bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs";
+import { calculateBombDeliveryV0_3Full as calculateBombDeliveryV0_3 } from "../bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs";
 import { calculateWheelBoxGeometryV0_3 } from "./wheel-box-geometry-v0.3.mjs";
 import {
   calculateOrbitHoldingTurnV0_3,

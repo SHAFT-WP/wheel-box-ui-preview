@@ -1,4 +1,4 @@
-import { calculateBombDeliveryV0_3 } from "../bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs";
+import { calculateBombDeliveryV0_3Full as calculateBombDeliveryV0_3 } from "../bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs";
 import { calculateWheelBoxFromBdpResultV0_4 } from "./wheel-box-be-v0.4.mjs";
 import { calculateWheelBoxGeometryV0_4 } from "./wheel-box-geometry-v0.4.mjs";
 
