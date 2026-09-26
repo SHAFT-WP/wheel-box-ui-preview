@@ -1,6 +1,7 @@
 import { calculateBombDeliveryV0_3Full as calculateBombDeliveryV0_3 } from "../bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs";
 import { calculateWheelBoxFromBdpResultV0_4 } from "./wheel-box-be-v0.4.mjs";
 import { calculateWheelBoxGeometryV0_4 } from "./wheel-box-geometry-v0.4.mjs";
+import { truncateBeOutput } from "../../../common/ui/display-precision-v0.1.mjs";
 
 export const WHEEL_BOX_BE_MODEL_V0_5 = Object.freeze({
   id: "wheel-box-be-v0.5-bilateral-bdp-composition",
@@ -144,8 +145,15 @@ function composeBilateralResult(shared, geometry) {
  *
  * Shared BDP/radius/performance validation stays in V0.4. V0.5 replaces only
  * the direction-limited geometry with V0.4 bilateral RIGHT/LEFT geometry.
+ *
+ * Public entrypoints return output truncated to 5 decimals (docs/FE-BE-RULES.md); the *Full
+ * variants keep full precision for BE-to-BE composition and relation checks.
  */
 export function calculateWheelBoxFromBdpResultV0_5(input) {
+  return truncateBeOutput(calculateWheelBoxFromBdpResultV0_5Full(input));
+}
+
+export function calculateWheelBoxFromBdpResultV0_5Full(input) {
   requireObject("input", input);
   const direction = requireDirection(input.direction ?? "RIGHT");
 
@@ -167,7 +175,11 @@ export function calculateWheelBoxFromBdpResultV0_5(input) {
   return composeBilateralResult(shared, geometry);
 }
 
-export function calculateWheelBoxFromBombDeliveryInputV0_5({
+export function calculateWheelBoxFromBombDeliveryInputV0_5(input) {
+  return truncateBeOutput(calculateWheelBoxFromBombDeliveryInputV0_5Full(input));
+}
+
+export function calculateWheelBoxFromBombDeliveryInputV0_5Full({
   bombDeliveryInput,
   ...wheelBoxInput
 }) {
@@ -176,13 +188,14 @@ export function calculateWheelBoxFromBombDeliveryInputV0_5({
     ...bombDeliveryInput,
     angleOffDeg: BOX_ANGLE_OFF_DEG,
   });
-  return calculateWheelBoxFromBdpResultV0_5({
+  return calculateWheelBoxFromBdpResultV0_5Full({
     ...wheelBoxInput,
     bdpResult,
   });
 }
 
 export const calculateWheelBoxBeV0_5 = calculateWheelBoxFromBdpResultV0_5;
+export const calculateWheelBoxBeV0_5Full = calculateWheelBoxFromBdpResultV0_5Full;
 
 export const WHEEL_BOX_BE_CONSTANTS_V0_5 = Object.freeze({
   BOX_ANGLE_OFF_DEG,

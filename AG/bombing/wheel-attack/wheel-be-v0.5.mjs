@@ -1,9 +1,15 @@
+// V0.5 entrypoints return output truncated to 5 decimals (docs/FE-BE-RULES.md); the *Full
+// variants keep full precision for BE-to-BE composition. The V0.4 / V0.3 re-exports below are
+// full-precision composition cores, not FE-facing entrypoints.
 export {
   WHEEL_BOX_BE_CONSTANTS_V0_5,
   WHEEL_BOX_BE_MODEL_V0_5,
   calculateWheelBoxBeV0_5,
+  calculateWheelBoxBeV0_5Full,
   calculateWheelBoxFromBdpResultV0_5,
+  calculateWheelBoxFromBdpResultV0_5Full,
   calculateWheelBoxFromBombDeliveryInputV0_5,
+  calculateWheelBoxFromBombDeliveryInputV0_5Full,
 } from "./wheel-box-be-v0.5.mjs";
 
 export {
@@ -27,7 +33,7 @@ export {
 
 export const WHEEL_BE_ENTRYPOINT_V0_5 = Object.freeze({
   status: "Work / Pure Calculation / Not Official",
-  entrypointVersion: "0.5.0",
+  entrypointVersion: "0.5.1",
   fixedAngleOffDeg: 90,
   supportedDirections: Object.freeze(["RIGHT", "LEFT"]),
   canonicalBdpResultEntrypoint: "calculateWheelBoxFromBdpResultV0_5",
