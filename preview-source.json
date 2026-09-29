@@ -1,8 +1,9 @@
 {
-  "sourceCommit": "7f9fdf059692add5cd9d2a173bc6bf68c6a291f1",
+  "sourceCommit": "6b76246d8ba8fa7c9a5077f22cec82bf41911e79",
   "tool": "wheel-box",
   "files": [
     "AG/bombing/bomb-delivery-planner/ballistics-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/flight-path-wind-v0.1.mjs",
     "AG/bombing/bomb-delivery-planner/bomb-delivery-planner-v0.2.mjs",
     "AG/bombing/bomb-delivery-planner/bomb-delivery-planner-v0.3.mjs",
     "common/ui/display-precision-v0.1.mjs",
