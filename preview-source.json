@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "21442e9480713ab8d7c5270ca4ea4c9cc06078fa",
+  "sourceCommit": "5961c7dfcd4a6cb83aeee1a22f5de6cabdc153a3",
   "tool": "wheel-box",
   "files": [
     "AG/bombing/bomb-delivery-planner/ballistics-v0.1.mjs",
@@ -20,6 +20,7 @@
     "AG/bombing/wheel-attack/wheel-box-geometry-v0.4.mjs",
     "AG/bombing/wheel-attack/wheel-orbit-turn-v0.3.mjs",
     "common/airspeed/airspeed-v0.1.mjs",
+    "common/calculation/calculation-cache-v0.1.mjs",
     "common/atmosphere/standard-atmosphere-v0.1.mjs",
     "common/maneuvers/g-onset/g-onset-v0.1.mjs",
     "common/maneuvers/recovery-pull/recovery-pull-v0.1.mjs",
