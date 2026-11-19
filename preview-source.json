@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "84f657a83f489cf856dd185804d6593562b2f7ff",
+  "sourceCommit": "21992b8311055ca6ab9f353288ca8d2052c369ee",
   "tool": "wheel-box",
   "files": [
     "AG/bombing/bomb-delivery-planner/ballistics-v0.1.mjs",
@@ -25,6 +25,15 @@
     "common/maneuvers/g-onset/g-onset-v0.1.mjs",
     "common/maneuvers/recovery-pull/recovery-pull-v0.1.mjs",
     "common/maneuvers/turn-performance/radius-driven-level-turn-v0.1.mjs",
-    "common/maneuvers/turn-performance/turn-performance-v0.1.mjs"
+    "common/maneuvers/turn-performance/turn-performance-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/dive-track-mil-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/speed-cap-v0.1.mjs",
+    "flight/aircraft-performance/adopted-acceleration-grid-v0.1.mjs",
+    "AG/bombing/bomb-delivery-planner/roll-in-v0.2.mjs",
+    "flight/aircraft-performance/adopted-performance-model-v0.1.mjs",
+    "flight/aircraft-performance/work/pw229-performance-v0.1.mjs",
+    "flight/aircraft-performance/data/pw229-model-v0.1.mjs",
+    "flight/aircraft-performance/work/hffm-thrust-v0.1.mjs",
+    "flight/aircraft-performance/data/hffm-thrust-v0.1.mjs"
   ]
 }
